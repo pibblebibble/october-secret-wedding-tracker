@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="description" content="Private October wedding plan tracker for Vivien and Jon.">
+  <title>October Wedding Plan</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="apple-ui.css?v=20260829-typography-3">
+</head>
+<body>
+<main class="site">
+  <div class="topbar">
+    <button class="site-brand" type="button" data-view="home" aria-label="Open overview">
+      <span class="brand-mark" aria-hidden="true">VJ</span>
+      <span>October Wedding</span>
+    </button>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <button type="button" data-view="home">Overview</button>
+      <button type="button" data-view="plan">Run Sheet &amp; Venues</button>
+      <button type="button" data-view="guests">Guest List</button>
+      <button type="button" data-view="pending">Pending Items</button>
+    </nav>
+    <button class="icon-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false"><i class="ph ph-list" aria-hidden="true"></i></button>
+  </div>
+
+  <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+  <nav class="site-menu" id="siteMenu" aria-label="Site navigation" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu"><i class="ph ph-x" aria-hidden="true"></i></button>
+    <div class="drawer-links">
+      <button type="button" data-view="home"><i class="ph ph-house" aria-hidden="true"></i>Overview</button>
+      <button type="button" data-view="plan"><i class="ph ph-map-pin" aria-hidden="true"></i>Run Sheet &amp; Venues</button>
+      <button type="button" data-view="guests"><i class="ph ph-users" aria-hidden="true"></i>Guest List</button>
+      <button type="button" data-view="pending"><i class="ph ph-check-square" aria-hidden="true"></i>Pending Items</button>
+    </div>
+  </nav>
+
+  <section class="view active" id="home">
+    <div class="hero">
+      <div class="home-heading">
+        <p class="home-kicker"><span>October 3rd</span><span aria-hidden="true">|</span><span>Plan Tracker</span></p>
+        <h1>October Wedding Plan</h1>
+        <p class="home-updated">Last Updated: 29 Aug 2026</p>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dashboard-main">
+          <div class="home-stats" aria-label="Wedding plan summary">
+            <div><span class="stat-icon"><i class="ph ph-calendar-blank" aria-hidden="true"></i></span><p><strong id="daysToWedding">39</strong><span>Days to go</span></p></div>
+            <div><span class="stat-icon"><i class="ph ph-users" aria-hidden="true"></i></span><p><strong>42</strong><span>Guests attending</span></p></div>
+            <div><span class="stat-icon"><i class="ph ph-check-square" aria-hidden="true"></i></span><p><strong id="homePendingCount">4</strong><span>Tasks pending</span></p></div>
+          </div>
+
+          <div class="menu" aria-label="Quick links">
+            <button type="button" data-view="plan"><span class="menu-icon"><i class="ph ph-map-pin" aria-hidden="true"></i></span><span><strong>Run Sheet &amp; Venues</strong><small>Schedule and locations</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+            <button type="button" data-view="guests"><span class="menu-icon"><i class="ph ph-users" aria-hidden="true"></i></span><span><strong>Guest List</strong><small>Friends, plus-ones and RSVP status</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+            <button type="button" data-view="pending"><span class="menu-icon"><i class="ph ph-check-square" aria-hidden="true"></i></span><span><strong>Pending Items</strong><small>Outstanding confirmations and decisions</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <aside class="next-up" aria-label="Wedding-day events">
+          <div class="section-title"><h2>Next up</h2><button type="button" data-view="plan">View run sheet</button></div>
+          <button class="upcoming-event" type="button" data-view="plan" data-scroll-target="ground-eatery">
+            <time datetime="2026-10-03T15:00:00+08:00"><span>Oct</span><strong>03</strong><small>Sat</small></time>
+            <span><small>3:00 PM</small><strong>Doors Open</strong><span><i class="ph ph-map-pin" aria-hidden="true"></i>Ground Eatery</span></span>
+          </button>
+          <button class="upcoming-event" type="button" data-view="plan" data-scroll-target="ichigo-yakiniku">
+            <time datetime="2026-10-03T18:00:00+08:00"><span>Oct</span><strong>03</strong><small>Sat</small></time>
+            <span><small>6:00 PM</small><strong>Yakiniku Dinner</strong><span><i class="ph ph-map-pin" aria-hidden="true"></i>Ichigo e-Yakiniku</span></span>
+          </button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="plan">
+    <div class="page-head">
+      <button class="back" type="button" data-view="home">Overview</button>
+      <h2>Run Sheet &amp; Venues</h2>
+      <p>The public timings are here as a starting point. The detailed internal schedule can replace them when it is ready.</p>
+    </div>
+
+    <article class="event-card" id="ground-eatery">
+      <header class="event-card-header">
+        <h3>Wedding &amp; Reception</h3>
+        <p class="event-place"><i class="ph ph-map-pin" aria-hidden="true"></i>Ground Eatery</p>
+        <div class="event-meta"><span>3 October 2026</span><span>3:00–6:00 PM</span><span>Friends only · no tea ceremony</span></div>
+      </header>
+      <div class="event-schedule">
+        <h4>Current schedule</h4>
+        <ol>
+          <li><time>3:00 PM</time><span>Doors open, canapés, photobooth and guests settle in.</span></li>
+          <li><time>4:00 PM</time><span>Tin welcomes guests, gives a short opening and gathers everyone’s attention.</span></li>
+          <li><time>4:05 PM</time><span>Viv and Jon walk in together from the entrance to the front.</span></li>
+          <li><time>4:10 PM</time><span>Tin speaks about Viv and Jon as their friend and leads into the vows.</span></li>
+          <li><time>4:20 PM</time><span>Vow exchange, ring exchange and kith.</span></li>
+          <li class="schedule-with-notes">
+            <time>4:35 PM</time>
+            <div class="schedule-entry">
+              <span>Friend speeches, approximately five minutes each: Evonne — Viv; Jon’s friend — TBC; Sean — Viv; Jon’s friend — TBC.</span>
+              <details class="schedule-accordion">
+                <summary><span>Click here for speech notes</span><span class="schedule-accordion-toggle" aria-hidden="true"><i class="ph ph-plus"></i><i class="ph ph-minus"></i></span></summary>
+                <div class="schedule-accordion-content">
+                  <p>Each speaker can choose whichever prompts feel natural. They do not need to cover everything.</p>
+                  <ul>
+                    <li>How they met Viv or Jon and their first impression.</li>
+                    <li>A memorable university story or a moment that captures their personality.</li>
+                    <li>What they were like before Viv and Jon became a couple.</li>
+                    <li>What Viv and Jon bring out in one another.</li>
+                    <li>Something about the couple that other guests might not know.</li>
+                    <li>A funny habit, recurring incident or affectionate grievance.</li>
+                    <li>A moment when Viv or Jon supported them as a friend.</li>
+                    <li>What they hope marriage looks like for Viv and Jon.</li>
+                    <li>A prediction, wish or toast to finish.</li>
+                  </ul>
+                  <p><strong>Simple structure:</strong> how I know them → one strong story → what it says about them → what I see in Viv and Jon together → one wish and a toast.</p>
+                </div>
+              </details>
+            </div>
+          </li>
+          <li><time>4:55 PM</time><span>Viv and Jon thank everyone and announce the next plans.</span></li>
+          <li><time>5:00 PM</time><span>One big-ass group photo.</span></li>
+          <li class="schedule-with-notes">
+            <time>5:10 PM</time>
+            <div class="schedule-entry">
+              <span>Photos by group order.</span>
+              <details class="schedule-accordion">
+                <summary><span>Click here for group photo organization</span><span class="schedule-accordion-toggle" aria-hidden="true"><i class="ph ph-plus"></i><i class="ph ph-minus"></i></span></summary>
+                <div class="schedule-accordion-content">
+                  <p>Provisional order — to be fine-tuned later.</p>
+                  <ol>
+                    <li>Tin and the four speakers.</li>
+                    <li>Full university group.</li>
+                    <li>Viv’s friends.</li>
+                    <li>Jon’s friends.</li>
+                    <li>Mutual-friend circles.</li>
+                    <li>Individual requested combinations.</li>
+                  </ol>
+                </div>
+              </details>
+            </div>
+          </li>
+          <li><time>6:00 PM</time><span>Move across the street for dinner.</span></li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="event-card" id="ichigo-yakiniku">
+      <header class="event-card-header">
+        <h3>Dinner</h3>
+        <p class="event-place"><i class="ph ph-map-pin" aria-hidden="true"></i>Ichigo e-Yakiniku</p>
+        <div class="event-meta"><span>3 October 2026</span><span>6:00–10:00 PM</span></div>
+      </header>
+      <div class="event-schedule">
+        <h4>Current schedule</h4>
+        <ol>
+          <li><time>6:00 PM</time><span>Yakiniku buffet begins.</span></li>
+          <li><time>8:00 PM</time><span>High Stakes, Low Pressure game.</span></li>
+          <li><time>10:00 PM</time><span>Event ends.</span></li>
+        </ol>
+      </div>
+    </article>
+
+    <div class="bottom-nav"><button type="button" data-view="guests">Guest List</button></div>
+  </section>
+
+  <section class="view" id="guests">
+    <div class="page-head">
+      <button class="back" type="button" data-view="home">Overview</button>
+      <h2>Guest List</h2>
+      <p>Guest counts and RSVP status for 3 October.</p>
+    </div>
+
+    <div class="guest-summary" aria-label="Guest list summary">
+      <div><span class="summary-dot reception"></span><strong>36</strong><small>Ground Eatery guests</small></div>
+      <div><span class="summary-dot total"></span><strong>38</strong><small>Ground Eatery + bride &amp; groom</small></div>
+      <div><span class="summary-dot dinner"></span><strong>42</strong><small>Dinner guests</small></div>
+      <div><span class="summary-dot total"></span><strong>44</strong><small>Dinner + bride &amp; groom</small></div>
+    </div>
+    <p class="guest-summary-note">RSVP breakdown: 34 primary guests — 30 attending, 4 declined, with 12 named plus-ones.</p>
+
+    <article class="guest-event-panel">
+      <div class="guest-section-heading">
+        <h3>Attending</h3>
+        <span>42 guests · 36 at Ground Eatery</span>
+      </div>
+      <div class="guest-list">
+        <table class="guest-table">
+          <thead><tr><th>No.</th><th>Guest</th><th>Plus-one</th><th>RSVP status</th></tr></thead>
+          <tbody>
+            <tr><td class="guest-number">1</td><td><strong>Abigail Chin</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">2</td><td><strong>Alissa Nazeri</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">3</td><td><strong>Andrew Cheam</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Dinner only</small></td></tr>
+            <tr><td class="guest-number">4</td><td><strong>Anna Leong</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">5</td><td><strong>Annabel Chong</strong></td><td>Jason</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Dinner only</small></td></tr>
+            <tr><td class="guest-number">6</td><td><strong>Benedict Wong</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Dinner only</small></td></tr>
+            <tr><td class="guest-number">7</td><td><strong>Chester Wong</strong></td><td>Brenda Chang</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">8</td><td><strong>Cynthia Sim</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">9</td><td><strong>Dylan Chen</strong></td><td>Krystal Chin</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">10</td><td><strong>Edson Fernandez</strong></td><td>Chia Mei Hui</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">11</td><td><strong>Evonne Lau</strong></td><td>Carol Chen</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">12</td><td><strong>Ian Chin</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">13</td><td><strong>Jamie Chan</strong></td><td>Vincent Yong</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">14</td><td><strong>Jing Liang Wong</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">15</td><td><strong>JJ Loo</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Dinner only</small></td></tr>
+            <tr><td class="guest-number">16</td><td><strong>Lissha Cho</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">17</td><td><strong>Lin Sheng Kai</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">18</td><td><strong>Low Yau Oon</strong></td><td>Felicia Koo</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">19</td><td><strong>Marilyn Chua</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">20</td><td><strong>Nathaniel Tang</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">21</td><td><strong>Nixon Nip</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">22</td><td><strong>Pamela Philip</strong></td><td>Ryan Tan</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">23</td><td><strong>Stephi Yeap</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">24</td><td><strong>Tang Sheng Lim</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">25</td><td><strong>Tet Sean Lee</strong></td><td>Alexia Ng</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">26</td><td><strong>Tin Phyoe Khant</strong></td><td>Michelle Loo</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">27</td><td><strong>Xin Ying Lee</strong></td><td>Harry Chong</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">28</td><td><strong>Yee Kee Choong</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Dinner only</small></td></tr>
+            <tr><td class="guest-number">29</td><td><strong>Ze Bing Yew</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="attending-label">Attending</span><small>Both</small></td></tr>
+            <tr><td class="guest-number">30</td><td><strong>Zizi Dani</strong></td><td>Bashir</td><td class="guest-rsvp"><span class="attending-label">Attending · 2</span><small>Both</small></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="guest-section-heading declined-heading">
+        <h3>Declined</h3>
+        <span>4 guests</span>
+      </div>
+      <div class="guest-list">
+        <table class="guest-table declined-table">
+          <thead><tr><th>No.</th><th>Guest</th><th>Plus-one</th><th>RSVP status</th></tr></thead>
+          <tbody>
+            <tr><td class="guest-number">31</td><td><strong>Bryan Khung</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="declined-label">Declined</span></td></tr>
+            <tr><td class="guest-number">32</td><td><strong>Chester Lok Kin Ye</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="declined-label">Declined</span></td></tr>
+            <tr><td class="guest-number">33</td><td><strong>Jalina Wong</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="declined-label">Declined</span></td></tr>
+            <tr><td class="guest-number">34</td><td><strong>Samantha Wong</strong></td><td class="no-plus-one">—</td><td class="guest-rsvp"><span class="declined-label">Declined</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <section class="view" id="pending">
+    <div class="page-head">
+      <button class="back" type="button" data-view="home">Overview</button>
+      <h2>Pending Items</h2>
+      <p id="pendingProgressCount">0 of 4 completed</p>
+    </div>
+
+    <div class="pending-progress" aria-hidden="true"><span id="pendingProgressFill"></span></div>
+    <div class="pending-content">
+      <article class="pending-group">
+        <h3><time datetime="2026-10-03"><span class="pending-day">3</span><span class="pending-month">October</span></time><span class="pending-event">Wedding Day</span><span class="pending-section-count">0 / 4 complete</span></h3>
+        <div class="pending-list">
+          <label class="pending-item"><input type="checkbox" data-task="run-sheet"><span class="pending-check"><i class="ph ph-check" aria-hidden="true"></i></span><strong>Replace the public timings with the full internal run sheet</strong></label>
+          <label class="pending-item"><input type="checkbox" data-task="ground-access"><span class="pending-check"><i class="ph ph-check" aria-hidden="true"></i></span><strong>Confirm Ground Eatery access, handover and venue contact</strong></label>
+          <label class="pending-item"><input type="checkbox" data-task="venue-move"><span class="pending-check"><i class="ph ph-check" aria-hidden="true"></i></span><strong>Confirm the 6:00 PM guest movement to Ichigo</strong></label>
+          <label class="pending-item"><input type="checkbox" data-task="contacts"><span class="pending-check"><i class="ph ph-check" aria-hidden="true"></i></span><strong>Add the day-of operational contacts</strong></label>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div><strong>Vivien &amp; Jon</strong><span>October Wedding Plan Tracker</span></div>
+    <div class="footer-meta"><span>2026</span><button class="footer-top" id="backToTop" type="button">Back to top</button></div>
+  </footer>
+</main>
+
+<script>
+const STORE = 'vj-october-wedding-v2:';
+const menu = document.querySelector('#siteMenu');
+const backdrop = document.querySelector('#menuBackdrop');
+const menuButton = document.querySelector('#menuButton');
+
+function toggleMenu(force) {
+  const open = typeof force === 'boolean' ? force : !menu.classList.contains('open');
+  menu.classList.toggle('open', open);
+  backdrop.classList.toggle('open', open);
+  menu.setAttribute('aria-hidden', String(!open));
+  menuButton.setAttribute('aria-expanded', String(open));
+  menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  document.body.classList.toggle('drawer-open', open);
+}
+
+function showView(id, targetId) {
+  const next = document.getElementById(id) ? id : 'home';
+  document.querySelectorAll('.view').forEach(view => view.classList.toggle('active', view.id === next));
+  document.querySelectorAll('[data-view]').forEach(button => button.classList.toggle('active', button.dataset.view === next));
+  history.replaceState(null, '', next === 'home' ? location.pathname : `#${next}`);
+  document.title = next === 'home' ? 'October Wedding Plan' : `${document.querySelector(`#${next} h2`)?.textContent} — October Wedding Plan`;
+  toggleMenu(false);
+  requestAnimationFrame(() => {
+    const target = targetId ? document.getElementById(targetId) : null;
+    window.scrollTo({ top: target ? Math.max(0, target.offsetTop - 96) : 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  });
+}
+
+document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => showView(button.dataset.view, button.dataset.scrollTarget)));
+menuButton.addEventListener('click', () => toggleMenu());
+document.querySelector('#drawerClose').addEventListener('click', () => toggleMenu(false));
+backdrop.addEventListener('click', () => toggleMenu(false));
+document.addEventListener('keydown', event => { if (event.key === 'Escape') toggleMenu(false); });
+document.querySelector('#backToTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+function updateCountdown() {
+  const target = new Date('2026-10-03T00:00:00+08:00');
+  document.querySelector('#daysToWedding').textContent = String(Math.max(0, Math.ceil((target - new Date()) / 86400000)));
+}
+
+function updatePending() {
+  const tasks = [...document.querySelectorAll('[data-task]')];
+  const complete = tasks.filter(task => task.checked).length;
+  const open = tasks.length - complete;
+  document.querySelector('#pendingProgressCount').textContent = `${complete} of ${tasks.length} completed`;
+  document.querySelector('#pendingProgressFill').style.width = `${tasks.length ? complete / tasks.length * 100 : 0}%`;
+  document.querySelector('#homePendingCount').textContent = String(open);
+  document.querySelector('.pending-section-count').textContent = `${complete} / ${tasks.length} complete`;
+}
+
+function bindTasks() {
+  document.querySelectorAll('[data-task]').forEach(task => {
+    const key = STORE + 'task:' + task.dataset.task;
+    task.checked = localStorage.getItem(key) === '1';
+    task.addEventListener('change', () => {
+      localStorage.setItem(key, task.checked ? '1' : '0');
+      updatePending();
+    });
+  });
+  updatePending();
+}
+
+function labelTables() {
+  document.querySelectorAll('table').forEach(table => {
+    const labels = [...table.querySelectorAll('th')].map(cell => cell.textContent.trim());
+    table.querySelectorAll('tbody tr').forEach(row => {
+      [...row.children].forEach((cell, index) => { cell.dataset.label = labels[index] || ''; });
+    });
+  });
+}
+
+updateCountdown();
+bindTasks();
+labelTables();
+showView(location.hash.slice(1) || 'home');
+</script>
+</body>
+</html>
