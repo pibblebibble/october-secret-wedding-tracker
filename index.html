@@ -335,7 +335,7 @@ const STORE = 'vj-october-wedding-v2:';
 const SEATING_STORAGE = STORE + 'seat-planner';
 const SEATING_DOCUMENT_STORAGE = STORE + 'seat-planner-document-name';
 const SEATING_VERSION_STORAGE = STORE + 'seat-planner-version';
-const SEATING_PLAN_VERSION = '2026-09-12-yakiniku-layout-v1';
+const SEATING_PLAN_VERSION = '2026-09-13-yakiniku-allocation-v2';
 const TABLE_LAYOUT = Object.freeze([
   { capacity: 6, shape: 'rectangle', orientation: 'horizontal', area: 'table-1' },
   { capacity: 10, shape: 'rectangle', orientation: 'horizontal', area: 'table-2' },
@@ -350,7 +350,20 @@ const TABLE_LAYOUT = Object.freeze([
   { capacity: 6, shape: 'rectangle', orientation: 'horizontal', area: 'table-11' },
   { capacity: 4, shape: 'square', orientation: 'around', area: 'table-12' }
 ]);
-const DEFAULT_SEATING = TABLE_LAYOUT.map(table => Array(table.capacity).fill(''));
+const DEFAULT_SEATING = Object.freeze([
+  ['Nathaniel Tang', 'Nixon Nip', 'Lin Sheng Kai', 'Edson Fernandez', 'Chia Mei Hui', ''],
+  ['Alissa Nazeri', 'Anna Leong', 'Marilyn Chua', '', '', 'Xin Ying Lee', 'Harry Chong', 'Zizi Dani', 'Bashir', ''],
+  ['Tet Sean Lee', 'Dylan Chen', 'Tin Phyoe Khant', 'Alexia Ng', 'Krystal Chin', 'Michelle Loo'],
+  ['', '', '', ''],
+  ['Chester Wong', 'Brenda Chang', 'Annabel Chong', 'Jason'],
+  ['Andrew Cheam', 'Tang Sheng Lim', 'Benedict Wong', 'Jing Liang Wong', 'Low Yau Oon', 'Felicia Koo'],
+  ['Ze Bing Yew', 'Pamela Philip', 'Ryan Tan', 'Ian Chin', 'Cynthia Sim', ''],
+  ['', '', '', ''],
+  ['', '', '', ''],
+  ['', '', '', ''],
+  ['JJ Loo', 'Yee Kee Choong', 'Carol Chen', 'Lissha Cho', 'Stephi Yeap', 'Evonne Lau'],
+  ['Jamie Chan', 'Vincent Yong', 'Abigail Chin', '']
+]);
 const SEATING_GUEST_ROSTER = Object.freeze([
   'Vivien Chiew', 'Jonathan Tay',
   'Abigail Chin', 'Alissa Nazeri', 'Andrew Cheam', 'Anna Leong', 'Annabel Chong', 'Jason',
