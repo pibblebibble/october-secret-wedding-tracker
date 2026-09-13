@@ -273,6 +273,7 @@
     <div class="seat-planner-message" id="seatingSaveStatus" role="status" aria-live="polite">Changes are saved in this browser.</div>
     <div class="seat-floorplan" id="seatFloorplan" aria-label="Ichigo e-Yakiniku dinner seating floor plan"></div>
     <p class="seating-note"><i class="ph ph-info" aria-hidden="true"></i>The layout follows the Yakiniku venue plan.</p>
+    <p class="seating-note"><i class="ph ph-warning-circle" aria-hidden="true"></i>Tables 07 and 12 are activity tables. Table 12 is positioned very close to the entrance.</p>
     <div class="unassigned-remark" id="unassignedRemark" aria-live="polite">
       <i class="ph ph-warning-circle" aria-hidden="true"></i>
       <div>
@@ -335,7 +336,7 @@ const STORE = 'vj-october-wedding-v2:';
 const SEATING_STORAGE = STORE + 'seat-planner';
 const SEATING_DOCUMENT_STORAGE = STORE + 'seat-planner-document-name';
 const SEATING_VERSION_STORAGE = STORE + 'seat-planner-version';
-const SEATING_PLAN_VERSION = '2026-09-13-yakiniku-allocation-v2';
+const SEATING_PLAN_VERSION = '2026-09-14-yakiniku-allocation-v3';
 const TABLE_LAYOUT = Object.freeze([
   { capacity: 6, shape: 'rectangle', orientation: 'horizontal', area: 'table-1' },
   { capacity: 10, shape: 'rectangle', orientation: 'horizontal', area: 'table-2' },
@@ -352,17 +353,17 @@ const TABLE_LAYOUT = Object.freeze([
 ]);
 const DEFAULT_SEATING = Object.freeze([
   ['Nathaniel Tang', 'Nixon Nip', 'Lin Sheng Kai', 'Edson Fernandez', 'Chia Mei Hui', ''],
-  ['Alissa Nazeri', 'Anna Leong', 'Marilyn Chua', '', '', 'Xin Ying Lee', 'Harry Chong', 'Zizi Dani', 'Bashir', ''],
-  ['Tet Sean Lee', 'Dylan Chen', 'Tin Phyoe Khant', 'Alexia Ng', 'Krystal Chin', 'Michelle Loo'],
-  ['', '', '', ''],
+  ['', 'Anna Leong', 'Marilyn Chua', 'Alissa Nazeri', '', '', 'Harry Chong', 'Xin Ying Lee', 'Zizi Dani', 'Bashir'],
+  ['', 'Dylan Chen', 'Krystal Chin', 'Ze Bing Yew', 'Tet Sean Lee', 'Alexia Ng'],
+  ['Michelle Loo', 'Tin Phyoe Khant', '', ''],
   ['Chester Wong', 'Brenda Chang', 'Annabel Chong', 'Jason'],
-  ['Andrew Cheam', 'Tang Sheng Lim', 'Benedict Wong', 'Jing Liang Wong', 'Low Yau Oon', 'Felicia Koo'],
-  ['Ze Bing Yew', 'Pamela Philip', 'Ryan Tan', 'Ian Chin', 'Cynthia Sim', ''],
+  ['Andrew Cheam', 'Tang Sheng Lim', 'Jing Liang Wong', 'Benedict Wong', 'Low Yau Oon', 'Felicia Koo'],
+  ['', '', '', '', '', ''],
+  ['Vivien Chiew', '', 'Jonathan Tay', ''],
+  ['Ian Chin', 'Pamela Philip', 'Cynthia Sim', 'Ryan Tan'],
+  ['', 'Vincent Yong', 'Abigail Chin', 'Jamie Chan'],
+  ['JJ Loo', 'Yee Kee Choong', 'Evonne Lau', 'Lissha Cho', 'Stephi Yeap', 'Carol Chen'],
   ['', '', '', ''],
-  ['', '', '', ''],
-  ['', '', '', ''],
-  ['JJ Loo', 'Yee Kee Choong', 'Carol Chen', 'Lissha Cho', 'Stephi Yeap', 'Evonne Lau'],
-  ['Jamie Chan', 'Vincent Yong', 'Abigail Chin', '']
 ]);
 const SEATING_GUEST_ROSTER = Object.freeze([
   'Vivien Chiew', 'Jonathan Tay',
